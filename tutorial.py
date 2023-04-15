@@ -104,9 +104,11 @@ class Player(pygame.sprite.Sprite):
         self.y_vel += min(1, (self.fall_count / fps) * self.GRAVITY) # can be tweaked instead of min, just put 1+blah
         self.move(self.x_vel, self.y_vel)
 
+        hit_time = 1
+
         if self.hit:
             self.hit_count += 1
-        if self.hit_count > fps * 2:
+        if self.hit_count > fps * hit_time:
                 self.hit = False
                 self.hit_count = 0
 
