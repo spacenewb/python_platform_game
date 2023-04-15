@@ -276,8 +276,9 @@ def handle_move(player, objects):
         if obj and obj.name == "fire":
             player.make_hit()
 
-
+# https://youtu.be/dTBbJ6qDY8o
 # https://youtu.be/6gLeplbqtqg
+# https://sanderfrenken.github.io/Universal-LPC-Spritesheet-Character-Generator/#?body=Body_color_light&head=Human_male_light
 def main(window):
     clock = pygame.time.Clock()
     background, bg_image = get_background("Blue.png")
